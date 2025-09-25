@@ -1,0 +1,13 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+ <libro>
+  <titulo>El camino de los reyes<titulo>
+  <autor>Brandon Sanderson</autor>
+  <editorial>Nova</editorial>
+</libro> 
+
+ <libro>
+  <titulo>Maximum Berserk 1<titulo/>
+  <autor>Kentaro Miura</autor>
+  <editorial>Panini</editorial>
+ </libro>
