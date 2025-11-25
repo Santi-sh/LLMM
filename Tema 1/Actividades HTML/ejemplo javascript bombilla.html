@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <h1>Ejemplo javascript botón on y off</h1>
+</head>
+<script>
+  function emotion(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "Sleep.png"
+  } else {
+    pic = "Wakeup.png"
+  }
+document.getElementById("image").src = pic;
+}
+</script> 
+
+<img id="image" src="Sleep.png" width="200" height="180">
+
+<p>
+<button type="button" onclick="emotion(1)">Light On</button>
+<button type="button" onclick="emotion(0)">Light Off</button>
+</p>
+
+</html>

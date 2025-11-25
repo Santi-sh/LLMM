@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <style>
+form {
+  margin: auto;
+  border:2px solid black;
+  text-align: center;
+  border-style:outset;
+  border-radius: 20px;
+  padding: 20px;
+}
+p {
+  
+  text-align: center;
+}
+.caja {
+        margin: auto;
+        border: 1px solid #333;
+        text-align: center;
+        border-style:outset;
+        width: 500px;
+        padding: 8px;
+        border-radius: 20px;
+    }
+</style>
+<head>
+<div class="caja">
+  <h2>RECETAS</h2>
+  <img id="image" src="comida.jpg" width="200" height="180">
+  <p>Elige la que más te guste:</p>
+
+  <form>
+  <input type="radio" id="lasaña" name="prefer_food" value="Lasaña">
+  <label for="lasaña">Lasaña</label><br>
+  <input type="radio" id="rissoto" name="prefer_food" value="Rissoto">
+  <label for="rissoto">Rissoto</label><br>
+  <input type="radio" id="spaghetti" name="prefer_food" value="Espaguetis Carbonara">
+  <label for="spaghetti">Espaguetis Carbonara</label>
+</form> 
+
+<p>Señala cual de estos ingredientes se encuentra en las anteriores recetas:</p>
+
+<form>
+  <input type="checkbox" id="lasaña" name="prefer_food" value="Lasaña">
+  <label for="champiñones">Champiñones</label><br>
+  <input type="checkbox" id="rissoto" name="prefer_food" value="Rissoto">
+  <label for="bechamel">Bechamel</label><br>
+  <input type="checkbox" id="spaghetti" name="prefer_food" value="Espaguetis Carbonara">
+  <label for="queso">Queso parmesano</label>
+</form> 
+</div>
+</head>
+</html>

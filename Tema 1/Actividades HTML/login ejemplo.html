@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <style>
+form {
+  border:2px solid black;
+  text-align: center;
+  border-style:outset;
+  border-radius: 20px;
+  padding: 20px;
+}
+p {
+  text-align: center;
+}
+</style>
+<body>
+
+<h2 style="text-align: center;">Iniciar sesión</h2>
+
+<form action="/login.php">
+  <label for="username">Usuario:</label><br>
+  <input type="text" id="fname" name="username" value=""><br>
+  <label for="password">Contraseña:</label><br>
+  <input type="text" id="password" name="l" value=""><br><br>
+  <input type="submit" value="Iniciar">
+</form> 
+<form style="border:none">
+  <input type="radio" id="lasaña" name="prefer_food" value="Lasaña">
+  <label for="lasaña">Lasaña</label><br>
+  <input type="radio" id="rissoto" name="prefer_food" value="Rissoto">
+  <label for="rissoto">Rissoto</label><br>
+  <input type="radio" id="spaghetti" name="prefer_food" value="Espaguetis Carbonara">
+  <label for="spaghetti">Espaguetis Carbonara</label>
+</form> 
+
+<p>¿Olvidaste la contraseña?</p>
+
+</body>
+</html>
