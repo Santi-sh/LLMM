@@ -1,0 +1,107 @@
+/* ===== el estilo general ===== */
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0; /* Quito el margen por defecto del navegador para tener
+       más control sobre el diseño de la página */
+    background-color: #c0bac9;
+}
+
+/* ===== cabecera ===== */ 
+header {
+    background-color: #202020;
+    color:#3d70dd;
+    padding: 20px;  /* Añado espacio interior para que el contenido no esté pegado
+       a los bordes del header */
+
+    display: flex; /* Para que se adapte a cualquier dispositivo en el que se abra la página */
+    justify-content: space-between; /* Esto separa el título a la izquierda y el menú a la derecha */
+    align-items: center; /* Sirve para que todo quede alineado o centrado */
+}
+
+/* ===== menú o listas ===== */
+nav ul {
+    list-style-type: none; /* Quito los puntos de la lista porque no quedan bien en un menú */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 10px; /* Añado separación entre los elementos del menú
+       para que no estén pegados */
+    
+}
+
+nav a {
+    text-decoration: none; /* Quito el subrayado para que los enlaces parezcan botones */
+    color: black;
+    padding: 8px;
+    border-radius: 5px; /* he usado el border-radius para poner bordes redondeados y se vea mas estetico */
+    background-color: #3d70dd; /* para poner un color de fondo */
+}
+
+/* ===== el banner de la página ===== */
+section img {
+    width: 100%;  /* La imagen así ocupa todo el año de la página y mantiene
+     las proporciones originales de la imagen con el height auto*/
+    height: auto;
+}
+
+/* ===== juegos favoritos ===== */
+main {
+    display: flex; /* Uso flex para colocar el artículo principal
+       y la barra lateral uno al lado del otro */
+    margin: 20px;
+}
+
+/* articulo  */
+main article {
+    width: 70%; /* Le doy 70% porque es el contenido más importante a diferencia del aside que
+    le he puesto 30% */
+    background-color: #202020;
+    color:#3d70dd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-right: 20px; /* Separación entre el artículo y el aside */
+}
+
+/* biografía con imagen */
+aside {
+    width: 30%;
+    color:#3d70dd;
+    background-color: #202020;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+aside img {
+    width: 100%; /* Tuve que añadir un aside img porque la imagen deformaba todo lo demás
+    al ser tan grande */
+    border-radius: 5px; 
+    display: flex;
+}
+
+/* ===== juegos completados, pendientes y próximos ===== */
+section:last-of-type { /* Tuve que usar last of type porque al tener arriba el section img
+    también alteraba el banner de la página. 
+    De esta forma puedo ponerle un estilo sin cambiar lo demás */
+    display: flex;
+    margin: 20px;
+}
+
+section:last-of-type article {
+    width: 33%;
+    background-color: #202020;
+    color:#3d70dd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+/* ===== pie de pagina ===== */
+footer {
+    background-color: #202020;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
