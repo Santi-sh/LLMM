@@ -1,0 +1,97 @@
+/* ===== el estilo general ===== */
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    background-color: #c0bac9;
+}
+
+/* ===== cabecera ===== */ 
+header {
+    background-color: #202020;
+    color:#3d70dd;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ===== menú o listas ===== */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 10px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #3d70dd;
+}
+
+/* ===== el banner de la página ===== */
+section img {
+    width: 100%;
+    height: auto;
+}
+
+/* ===== juegos favoritos ===== */
+main {
+    display: flex;
+    margin: 20px;
+}
+
+/* articulo  */
+main article {
+    width: 70%;
+    background-color: #202020;
+    color:#3d70dd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-right: 20px;
+}
+
+/* biografía con imagen */
+aside {
+    width: 30%;
+    color:#3d70dd;
+    background-color: #202020;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+aside img {
+    width: 100%;        /* la imagen ocupa todo el ancho del aside */
+    border-radius: 5px; /* opcional, bordes redondeados */
+    display: block;
+}
+
+/* ===== juegos completados, pendientes y próximos ===== */
+section:last-of-type {
+    display: flex;
+    margin: 20px;
+}
+
+section:last-of-type article {
+    width: 33%;
+    background-color: #202020;
+    color:#3d70dd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+/* ===== pie de pagina ===== */
+footer {
+    background-color: #202020;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
